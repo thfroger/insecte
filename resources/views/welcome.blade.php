@@ -25,7 +25,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                Welcome, Insect!
+                Welcome,  Insect!
                 </div>
                 <a href="{{ url('/form') }}">Fromulaire</a>
             </div>

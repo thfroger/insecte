@@ -18,7 +18,7 @@
             What's your race?<br>
             <input type="text" name="race" placeholder="saisissez votre race" value=""><br>
             We will serve you meals: what do you eat? <br>
-            <input type="text" name="food" placeholder="tell us what do you eat" value=""><br>
+            <input type="text" name="food" placeholder="tell us what do you eat" value=""><br><br>
             <input type="submit" value="Submit">
         </form> 
     </body>

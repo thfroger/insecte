@@ -20,15 +20,18 @@
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
-                </div>
             @endif
+                </div>
+
+                <div class= "flex-center full-height top-left links"
+                        <a href="{{ route('form') }}">Fromulaire</a>
+                </div>
 
             <div class="content">
                 <div class="title m-b-md">
-                Welcome,  Insect!
+                Welcome, Insect!
                 </div>
-                <a href="{{ url('/form') }}">Fromulaire</a>
             </div>
-        </div>
+        </div>    
     </body>
 </html>

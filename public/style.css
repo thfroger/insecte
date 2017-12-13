@@ -11,22 +11,26 @@ html, body {
 
 .full-height {
     height: 100vh;
+    color:white;
 }
 
 .flex-center {
     align-items: center;
     display: flex;
     justify-content: center;
+    color:white;
 }
 
 .position-ref {
     position: relative;
+    color:white;
 }
 
 .top-right {
     position: absolute;
     right: 10px;
     top: 18px;
+    color:white;
 }
 
 .content {
@@ -38,7 +42,7 @@ html, body {
 }
 
 .links > a {
-    color: #636b6f;
+    color: white;
     padding: 0 25px;
     font-size: 12px;
     font-weight: 600;
@@ -49,4 +53,11 @@ html, body {
 
 .m-b-md {
     margin-bottom: 30px;
+}
+
+.top-left {
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    color:white;
 }

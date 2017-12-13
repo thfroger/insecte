@@ -23,7 +23,7 @@ Route::get('/list', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-=======
+
 Route::get('/form','PostController@create')->name('form');
 
 Auth::routes();

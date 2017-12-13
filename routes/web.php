@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/list', function () {
     return view('list');
 });
@@ -22,6 +23,8 @@ Route::get('/list', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+=======
+Route::get('/form','PostController@create')->name('form');
 
 Auth::routes();
 

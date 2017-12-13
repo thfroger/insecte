@@ -5,7 +5,9 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Tableau de bord</div>
+
+                <div class="panel-heading">Dashboard</div>
+
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -14,7 +16,8 @@
                         </div>
                     @endif
 
-                    Tu es connecté, petit insecte !
+                    You are login !
+
                 </div>
             </div>
         </div>

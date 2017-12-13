@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::get('/list', function () {
+    return view('list');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+=======
 Route::get('/form','PostController@create')->name('form');
 
 Auth::routes();

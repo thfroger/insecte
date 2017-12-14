@@ -29,4 +29,13 @@ class UsersController extends Controller
         return view('Users', compact('post'));
     }
 
+    public function edit($id){
+        $post = Post::where('id', $id)->firstOrFail();
+        return view('post-edit', compact('post'));
+     }
+
+     public function update(Request $request){
+        return $request->input();
+     }
+
 }

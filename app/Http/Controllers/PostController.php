@@ -21,4 +21,10 @@ class PostController extends Controller
         echo "Données Valides";
     }
 
+    public function update($id, Request $request){
+        $post = Post::where('id', $id)->firstOrFail(); /* trouve l'entrée en DB */
+        $post->update($request->intersect(['age', 'famille', 'race','nourriture'])); /*récupère les valeurs suivantes */
+        return redirect()->back(); /* redirige vers la vue d'édition */
+     }
+     
 }

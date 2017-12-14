@@ -15,11 +15,14 @@
    <body>
       <a href="{{ URL::action('PostController@index') }}">Retour à la liste</a>
       <h1> I am {{ $post->user->name }}</h1>
-      <p>
-        I am {{ $post->user->age }} <br>
-        I'm {{ $post->user->famille }} <br>
-        I am{{ $post->user->race }} <br>
-        I eat {{ $post->user->nouriturre}}
-    </p>
+        <p>
+            I am {{ $post->user->age }} <br>
+            I'm {{ $post->user->famille }} <br>
+            I am{{ $post->user->race }} <br>
+            I eat {{ $post->user->nouriturre}}
+        </p>
+        <p>
+            <a href="{{ URL::action('PostController@edit', $post->id) }}" class="button">Editer</a>
+        </p>
    </body>
 </html>

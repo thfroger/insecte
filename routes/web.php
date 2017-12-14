@@ -28,4 +28,10 @@ Route::get('/form','PostController@create')->name('form');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/User/{id}', 'UserController@view'); //afficher un article
+Route::get('/User', 'UserController@index'); //permet de revenir en arrière
+
+Route::get('/User/{id}', 'UserController@view'); //afficher un utilisateur
+
+Route::get('/User/{id}/edit', 'UserController@edit'); //Modifier un utilisateur
+
+Route::post('User/{id}/update', 'UserController@update');//Mettre à jour un utilisateur
